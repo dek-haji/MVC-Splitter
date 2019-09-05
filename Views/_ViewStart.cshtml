@@ -1,0 +1,39 @@
+﻿@{Html.EJ().Splitter("Splitter").Height("360").Width("500").Orientation(Orientation.Vertical).PaneProperties(
+
+  p =>
+
+  {
+
+      p.Add().ContentTemplate(
+
+    @<div>
+
+        <div style="padding: 0px 15px;">
+
+            <h3 class="h3">Tools </h3>
+
+            Essential Tools is an collection of user interface components used to create interactive
+
+            ASP.NET MVC applications.
+
+        </div>
+
+    </div>);
+
+p.Add().ContentTemplate(
+
+@<div>
+
+    <div style="padding: 0px 15px;">
+
+        <h3 class="h3">Grid </h3>
+
+        Essential MVC Grid offers full featured a Grid control with extensive support for
+
+        Grouping and the display of hierarchical data.
+
+    </div>
+
+</div>);
+
+    }).Render();}
